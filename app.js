@@ -47,7 +47,7 @@ app.set('view engine', 'handlebars');
 
 //Mongoose
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb+srv://api_database:api1998@cluster0-66m94.mongodb.net/blogapp?retryWrites=true&w=majority', { useNewUrlParser: true }).then(() => {
+mongoose.connect('mongodb+srv://<database>:<password>@cluster0-66m94.mongodb.net/blogapp?retryWrites=true&w=majority', { useNewUrlParser: true }).then(() => {
     console.log('Conectado ao mongodb...');
 }).catch((erro) => {
     console.log('Erro ao conectar: ' + erro);
